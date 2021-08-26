@@ -1,7 +1,8 @@
-package com.syafii.mvi
+package com.syafii.mvi.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.syafii.mvi.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
