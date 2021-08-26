@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.syafii.mvi.R
 import com.syafii.mvi.data.model.User
 import com.syafii.mvi.databinding.ItemLayoutBinding
 
@@ -32,7 +33,7 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
             binding.run {
                 textViewUserName.text = user.name
                 textViewUserEmail.text = user.email
-                Glide.with(binding.root).load(user.avatar).into(imageViewAvatar)
+                Glide.with(binding.root).load(user.avatar).error(R.drawable.ic_profile).into(imageViewAvatar)
             }
         }
     }
